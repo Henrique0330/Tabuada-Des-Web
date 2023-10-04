@@ -1,0 +1,14 @@
+.center{
+    text-align: center;
+    padding: 100px;
+}
+.BB{
+    font-size: 30px;
+}
+body{
+    background-color: rgb(109, 117, 187);
+    color: rgb(245, 245, 245);
+}
+.border{
+    border: 1px solid black;
+}
