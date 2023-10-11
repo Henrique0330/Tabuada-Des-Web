@@ -10,24 +10,22 @@
 
 <body>
     <div class="border">
-        <div class="center">
-            <label class="BB" for="tabuada">Tabuada</label><br>
-            <input id="tabuada" type="number" oninput="mostraTabuada();">
-            <div id="resultado">
+        <label class="BB" for="tabuada">Tabuada</label><br>
+        <input id="tabuada" type="number" oninput="mostraTabuada();">
+        <div id="resultado"></div>
 
-            </div>
-            <script>
-                function mostraTabuada() {
-                    let conta = '';
-                    const input = document.getElementById('tabuada').value;
-                    for (let i = 1; i <= 10; i++) {
-                        conta += `${input} x ${i} = ${input * i}<br> `
-                        document.getElementById("resultado").innerHTML = conta;
-                    }
+        <script>
+            function mostraTabuada() {
+                let conta = '';
+                const input = document.getElementById('tabuada').value;
+                for (let i = 1; i <= 10; i++) {
+                    conta += `${input} x ${i} = ${input * i}<br> `
+                    document.getElementById("resultado").innerHTML = conta;
                 }
+            }
 
-            </script>
-        </div>
+        </script>
+
     </div>
 </body>
 
